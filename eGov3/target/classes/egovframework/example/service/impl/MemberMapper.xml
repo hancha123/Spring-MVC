@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="MemberDAO">
+
+	<select id="selectMemberList" resultType="egovframework.example.service.MemberVO">
+		SELECT id, name, email
+		FROM sample
+		ORDER BY id DESC
+	</select>
+
+	<insert id="insertMember" parameterType="egovframework.example.service.MemberVO">
+	    INSERT INTO sample (id, name, email)
+	    VALUES (#{id}, #{name}, #{email})
+	</insert>
+</mapper>
