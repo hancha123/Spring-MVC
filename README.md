@@ -1,1 +1,3 @@
-"# Spring-MVC" 
+# Spring-MVC
+
+Spring MVC Template Generator
